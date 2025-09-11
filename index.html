@@ -3,19 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Nefis Tadlar</title>
     <link rel="icon" type="image/x-icon" href="/image/favicon.svg" />
     <style>
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0%;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
       nav {
         background-color: #edf855;
         padding: 10px 20px;
         size: 36px;
+        border-radius: 200px;
       }
 
       nav ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        padding-top: 20px;
         display: flex;
         gap: 15px;
       }
@@ -33,55 +45,104 @@
       nav ul li a:hover {
         color: #da2828;
       }
-      .revanibuton:hover {
-        background-color: #4d4949;
-        color: rgb(255, 255, 255);
+      main {
+        min-height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        flex: 1;
+        display: flex;
+        gap: 50px;
+      }
+
+      main div a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      main div a:hover {
         padding: 5px;
         border-radius: 5px;
+        color: #da2828;
+      }
+
+      main div {
+        flex: 1;
+        padding: 20px;
       }
     </style>
   </head>
-  <body style="margin: 0; padding: 0">
-    <!-- NAVBAR - START -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Anasayfa</a></li>
-        <li>
-          <a href="about.html">Hakkımızda</a>
-        </li>
-        <li>
-          <a href="tatlı-tarifleri/tatlilar.html">Tatlılar</a>
-        </li>
-        <li>
-          <a href="contact.html">İletişim</a>
-        </li>
-      </ul>
-      <br />
-      <hr />
-    </nav>
-    <!-- NAVBAR - END -->
 
-    <!-- CONTENT - START -->
-    <section>
-      <h1 style="text-align: center">Tatlı Tarifleri</h1>
-      <p style="text-align: center">
-        En lezzetli tatlı tariflerini burada bulabilirsiniz!
-      </p>
+  <body>
+    <div class="container">
+      <!-- NAVBAR - START -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li>
+            <a href="about.html">Hakkımızda</a>
+          </li>
+          <li>
+            <a href="tatlı-tarifleri/tatlilar.html">Tatlılar</a>
+          </li>
+          <li>
+            <a href="tatlı-tarifleri/tatlilar.html">Yemekler</a>
+          </li>
+          <li>
+            <a href="contact.html">İletişim</a>
+          </li>
+        </ul>
         <br />
+        <hr />
+      </nav>
+      <!-- NAVBAR - END -->
 
-        <div style="text-align: center">
+      <!-- CONTENT - START -->
+      <!-- <section> -->
+      <main>
+        <div>
+          <h1 style="text-align: center">
+            <a href="/tatlı-tarifleri/tatlilar.html">Tatlı Tarifleri</a>
+          </h1>
+          <p style="text-align: center; font-size: large">
+            En lezzetli tatlı tariflerini burada bulabilirsiniz!
+          </p>
           <img
             src="https://www.unicornsinthekitchen.com/wp-content/uploads/2022/11/Revani-semolina-cake-5.1200px.jpg"
             alt="Tatlı"
-            style="width: 300px; height: auto; border-radius: 10px"
+            style="width: 300px; height: 300px; border-radius: 50%"
           />
-          <p>
-            <a class="revanibuton" style="color: #000000; text-decoration: none;" href="/tatlı-tarifleri/revani.html"><strong>REVANİ</strong></a>
+        </div>
+        <div>
+          <h1 style="text-align: center">
+            <a href="/yemek-tarifleri/yemekler.html">Yemek Tarifleri</a>
+          </h1>
+          <p style="text-align: center; font-size: large">
+            En lezzetli yemek tariflerini burada bulabilirsiniz!
           </p>
-    </section>
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.J5BFMOgR-Dmcom6Pwu1g1QHaE6?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Tatlı"
+            style="width: 300px; height: 300px; border-radius: 50%"
+          />
+        </div>
+      </main>
 
-    <!-- CONTENT - END -->
-    <!-- FOOTER - START -->
-    <!-- FOOTER - END -->
+      <!-- </section> -->
+      <!-- CONTENT - END -->
+
+      <!-- FOOTER - START -->
+      <footer
+        style="
+          text-align: center;
+          padding: 20px;
+          background-color: #edf855;
+          border-radius: 200px;
+        "
+      >
+        <p>&copy; 2025 Nefis Tadlar. Tüm hakları saklıdır.</p>
+      </footer>
+      <!-- FOOTER - END -->
+    </div>
   </body>
 </html>
