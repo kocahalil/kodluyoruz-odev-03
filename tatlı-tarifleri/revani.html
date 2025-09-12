@@ -4,14 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revani</title>
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0%;
+        }
+        nav {
+            background-color: #edf855;
+            padding: 10px 20px;
+            size: 36px;
+            border-radius: 200px;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            padding-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+    
+        nav ul li {
+            display: inline;
+        }
+    
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    
+        nav ul li a:hover {
+            color: #da2828;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            min-height: 100vh;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Revani Tarifi</h1>
+        <!-- NAVBAR - START -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Anasayfa</a></li>
+          <li>
+            <a href="../about.html">Hakkımızda</a>
+          </li>
+          <li>
+            <a href="tatlilar.html">Tatlılar</a>
+          </li>
+          <li>
+            <a href="../yemek-tarifleri/yemekler.html">Yemekler</a>
+          </li>
+          <li>
+            <a href="../contact.html">İletişim</a>
+          </li>
+        </ul>
+        <br />
+        <hr />
+      </nav>
+      <!-- NAVBAR - END -->
+    <main>    <h1 style="text-align: center;">Revani Tarifi</h1>
     <p style="text-align: center; font-size: large;">
         Revani, irmik ve yoğurt ile yapılan hafif ve lezzetli bir Türk tatlısıdır. İşte evde kolayca yapabileceğiniz revani tarifi:
     </p>
     <h2>Malzemeler:</h2>
-    <ul>
+    <section style=" display: flex; gap: 50px;">
+        <img src="https://www.unicornsinthekitchen.com/wp-content/uploads/2022/11/Revani-semolina-cake-5.1200px.jpg" alt="revani" style="width: 300px;">
+        <ul>
         <li>3 adet yumurta</li>
         <li>1 su bardağı toz şeker</li>
         <li>1 su bardağı yoğurt</li>
@@ -23,6 +89,8 @@
         <li>1 su bardağı toz şeker (şerbet için)</li>
         <li>Yarım limonun suyu (şerbet için)</li>
     </ul>
+    </section>
+    
     <h2>Yapılışı:</h2>
     <ol>
         <li>Fırını 180 dereceye ısıtın.</li>
@@ -32,6 +100,22 @@
         <li>Kek kalıbını yağlayın ve hamuru kalıba dökün.</li>
         <li>Önceden ısıtılmış fırında yaklaşık 30-35 dakika pişirin. Kürdan testi yaparak piştiğini kontrol edin.</li>
         <li>Kek pişerken şerbeti hazırlayın. Su ve toz şekeri bir tencerede kaynatın. Kaynadıktan sonra limon suyunu ekleyin ve birkaç dakika daha kaynatın. Şerbeti ocaktan alın ve soğumaya bırakın.</li>
-        <li
+        <li>Kek fırından çıktıktan sonra sıcak şerbeti üzerine dökün. Kekin şerbeti çekmesi için oda sıcaklığında bekletin.</li>
+        <li>Revaniyi dilimleyin ve servis yapın. İsterseniz üzerine hindistancevizi veya fıstık serpebilirsiniz.</li>
+    </main>
+
+          <!-- FOOTER - START -->
+      <footer
+        style="
+          text-align: center;
+          padding: 20px;
+          background-color: #edf855;
+          border-radius: 200px;
+        "
+      >
+        <p>&copy; 2025 Nefis Tadlar. Tüm hakları saklıdır.</p>
+      </footer>
+      <!-- FOOTER - END -->
+
 </body>
 </html>

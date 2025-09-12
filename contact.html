@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımızda</title>
+    <style>
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0%;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      nav {
+        background-color: #edf855;
+        padding: 10px 20px;
+        size: 36px;
+        border-radius: 200px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+        display: flex;
+        gap: 15px;
+      }
+
+      nav ul li {
+        display: inline;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        color: #da2828;
+      }
+      main {
+        flex: 1;
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAVBAR - START -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li>
+            <a href="about.html">Hakkımızda</a>
+          </li>
+          <li>
+            <a href="tatlı-tarifleri/tatlilar.html">Tatlılar</a>
+          </li>
+          <li>
+            <a href="tatlı-tarifleri/tatlilar.html">Yemekler</a>
+          </li>
+          <li>
+            <a href="contact.html">İletişim</a>
+          </li>
+        </ul>
+        <br />
+        <hr />
+      </nav>
+      <!-- NAVBAR - END -->
+
+      <!-- CONTENT - START -->
+      <main>
+        <h1>📬 İletişim</h1>
+        <p>
+          Bizimle paylaşmak istediğiniz her şey için buradayız. Tarif
+          önerileriniz, geri bildirimleriniz, iş birliği teklifleri ya da sadece
+          bir “Merhaba” demek isterseniz — bize ulaşmanız yeterli.
+        </p>
+        <h2>Email</h2>
+        <a href="meilto:destek@nefistatlar.com">destek@nefistatlar.com</a>
+        <h2>Telefon</h2>
+        <a href="tel:-90 555 123 45 67">+90 555 123 45 67</a>
+        <h2>Adres</h2>
+        <p>Nefis Tadlar, Lezzet Sokak No:10, İstanbul, Türkiye</p>
+        <h2>Sosyal Medya</h2>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/nefistatlar"
+              >Instagram: @nefistatlar</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/nefistatlar"
+              >Facebook: Nefis Tadlar</a
+            >
+          </li>
+          <li>
+            <a href="https://www.twitter.com/nefistatlar"
+              >Twitter: @nefistatlar</a
+            >
+          </li>
+        </ul>
+
+        <p>
+          Mutfakla ilgili her türlü sorunuz, öneriniz veya iş birliği
+          talepleriniz için yukarıdaki iletişim kanallarını kullanabilirsiniz.
+          Sizinle tanışmak ve mutfağın büyülü dünyasında birlikte yolculuk etmek
+          için sabırsızlanıyoruz!
+        </p>
+        <form>
+          <label for="name">Adınız:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">E-posta:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Mesajınız:</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea
+          ><br /><br />
+
+          <button type="submit">Gönder</button>
+        </form>
+      </main>
+      <!-- CONTENT - END -->
+      <!-- FOOTER - START -->
+      <footer
+        style="
+          text-align: center;
+          padding: 20px;
+          background-color: #edf855;
+          border-radius: 200px;
+        "
+      >
+        <p>&copy; 2025 Nefis Tadlar. Tüm hakları saklıdır.</p>
+      </footer>
+      <!-- FOOTER - END -->
+    </div>
+  </body>
+</html>
